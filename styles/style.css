@@ -337,3 +337,22 @@ nav li{
     padding-left: 155px;
     mix-blend-mode: luminosity;
 }
+/* footer part */
+footer{
+    width: 1440px;
+    height: 100px;
+    background: #FFF4E7;
+    border-radius: 8px;
+    margin-left: 15%;
+    margin-top: 180px;
+}
+.footer-drescription{
+    width: 720px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    padding: 39px 410px 39px 410px;
+    margin-bottom: 254px;
+    color: #424242;
+}
