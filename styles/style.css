@@ -277,6 +277,7 @@ nav li{
 /* section 4 part */
 .section-4{
     margin-left: 14%;
+    width: 1440px;
 }
 .section-4-title{
     width: 258px;
@@ -290,8 +291,7 @@ nav li{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 26px;
     align-items: center;
-    width: 1440px;
-    border: 5px solid red;
+    width: 1440px; 
 
 }
 .section-4-blog{
@@ -308,3 +308,32 @@ nav li{
     text-decoration: none;
     font-size: 16px;
     color: #FF900E;
+}
+/* section 5 part */
+.section-5{
+    margin-left: 5%;
+    margin-top: 180px;
+    
+}
+.sponsors-1{
+    text-align: center;
+}
+.sponsor-title{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-right: 5%;
+}
+.sponsor-description{
+    text-align: center;
+    margin-left: 30%;
+    width: 600px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+.sponsors-2 img{
+    padding-top: 50px;
+    padding-left: 155px;
+    mix-blend-mode: luminosity;
+}
