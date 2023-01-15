@@ -265,6 +265,13 @@ nav li{
     border-radius: 8px;
     margin: 46px 36px 60px 35px;
 }
+.section-3-container:hover{
+    border: 5px solid #FF900E;
+    border-radius: 15px;
+    background-color: #bb6400;
+    font-size: 20px;
+    color: white;
+}
 .section-3-container img{
     margin: 46px 0px 0px 0px;
 }
@@ -336,14 +343,14 @@ nav li{
     mix-blend-mode: luminosity;
 }
 /* footer part */
-footer{
+/* footer{
     width: 1440px;
     height: 100px;
     background: #FFF4E7;
     border-radius: 8px;
     margin-left: 15%;
     margin-top: 180px;
-}
+} */
 .footer-drescription{
     width: 720px;
     font-weight: 400;
@@ -353,12 +360,46 @@ footer{
     padding: 39px 410px 39px 410px;
     margin-bottom: 254px;
     color: #424242;
+
+    background-color: #FFF4E7;
+    border-radius: 8px;
+        margin-left: 15%;
+    margin-top: 180px;
 }
 
 /* responsive for phone */
 @media only screen and (max-width:576px) {
     body{
         margin: 15px 15px;
+    }
+    .header{
+        width: 100%;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .banner{
+        margin-left: 0;
+    }
+    .banner-title, .banner-discription{
+        width: 362px;
+    }
+    .btn-primary{
+        margin-left: 100px;
+    }
+    .banner-img{
+        width: 400px;
+        height: 400px;
+        padding: 0;
+        /* background-size: 100% 100%;
+        padding-top: 10px; */
     }
     .section-1{
         flex-direction: column;
@@ -374,7 +415,7 @@ footer{
         margin-top: 0;
     }
     .section-1-title, .section-1-discription{
-        width: 100%;
+        width: 350px;
     }
     .section-2{
         grid: none;
@@ -410,11 +451,57 @@ footer{
         width: 300px;
         
     }
+    .section-3{
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    .section-3-container:hover{
+        border: 5px solid #FF900E;
+        border-radius: 15px;
+        background-color: #bb6400;
+        font-size: 20px;
+        color: white;
+    }
+    .section-3-containers-1-description{
+        width: 300px;
+    }
     .btn-2{
         margin-top: 650px;
         width: 320px;
     }
-}
-.hide{
-    display: none;
+
+    .section-3-containers-2{
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: 0;
+        padding-left: 0;
+    }
+    .section-4-blogs{
+        margin-left: 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section-4-blog{
+        flex-direction: column;
+    }
+    .sponsor-description,.sponsor-title{
+        width: 300px;
+        margin-left: 0;
+    }
+    .sponsors-2 img{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 15px;
+    }
+    footer{
+        margin-top: 15px;
+        width: 400px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .footer-drescription{
+        width: 200px;
+        text-align: center;
+        margin-left: 15px;
+        padding-left: 50px;
+        padding-right: 80px;
+    }
 }
