@@ -98,7 +98,7 @@ nav li{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-evenly;
-    gap: 5px;
+    gap: 24px;
     padding-left: 301px;
     margin-top: 87px;
 }
@@ -109,8 +109,6 @@ nav li{
 .section-1-container{
     padding-left: 73px;
     margin-top: 287px;
-    /* display: flex;
-    flex-direction: column; */
 }
 .section-1-title{
     width: 468px;
@@ -355,4 +353,68 @@ footer{
     padding: 39px 410px 39px 410px;
     margin-bottom: 254px;
     color: #424242;
+}
+
+/* responsive for phone */
+@media only screen and (max-width:576px) {
+    body{
+        margin: 15px 15px;
+    }
+    .section-1{
+        flex-direction: column;
+        width: 100%;
+        margin: 15px 15px;
+    }
+    .section-1-images{
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 0;
+    }
+    .section-1-container{
+        padding-left: 0;
+        margin-top: 0;
+    }
+    .section-1-title, .section-1-discription{
+        width: 100%;
+    }
+    .section-2{
+        grid: none;
+        gap: 10px;
+        margin-left: 15px;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .vl, .section-2-containers-title, .section-2-containers-discription, .section-2-img, .section-2-conatainer-main, .section-2-container{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .vl{
+        height: 300px;
+    }
+    .section-2-container-1{
+        width: 400px;
+    }
+    .section-2-containers-discription{
+        width: 350px;
+    }
+    .section-2-img img{
+        max-width: 100%;
+        height: 400px;
+        padding-top: 10px;
+    }
+    .section-2-container{
+        width: 310px;
+    }
+    .section-2-container-description{
+        width: 300px;
+        
+    }
+    .btn-2{
+        margin-top: 650px;
+        width: 320px;
+    }
+}
+.hide{
+    display: none;
 }
